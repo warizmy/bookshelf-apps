@@ -1,0 +1,260 @@
+:root {
+  --bg: #fff;
+  --txt: #3d3d3d;
+  --bg2: #3c486b;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar Start */
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2);
+  padding: 1.2rem 0rem 1.2rem 0rem;
+}
+
+header .navbar-nav {
+  align-items: center;
+  display: flex;
+  gap: 5rem;
+}
+
+header .navbar-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+header .navbar-nav #home:hover {
+  text-decoration: underline;
+}
+
+header .navbar-nav #About:hover {
+  text-decoration: underline;
+}
+
+header .navbar-nav #header-txt {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+/* Navbar Ends */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Input Box Start */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 5rem;
+  width: 25%;
+  padding: 0rem 2rem 5%;
+}
+
+.input-box h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-form .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form label {
+  color: var(--txt);
+}
+
+.input-form input {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  color: var(--txt);
+  border: none;
+  padding: 0.4rem 1.1rem 0.4rem 1rem;
+  background-color: #e7e5e5;
+}
+
+.input-submit button {
+  font-family: "Poppins", sans-serif;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: #3c486b;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.input-submit button:hover {
+  background-color: #2b3b6d;
+  transition: 0.2s;
+}
+/* Input Box ends */
+
+/* Search box start */
+.search-box {
+  margin-top: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.search-input {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-input input {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  color: var(--txt);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border: none;
+  background-color: #e7e5e5;
+}
+
+.search-input button {
+  background-color: #3c486b;
+  border: none;
+  outline: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+.search-input button:hover {
+  background-color: #2b3b6d;
+}
+
+.search-input button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Search box ends */
+
+/* Output Box start */
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.output-box1 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.output-box1 h3 {
+  padding-left: 1rem;
+}
+
+.output-box2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.9rem;
+}
+
+.output-box2 h3 {
+  padding-left: 1rem;
+}
+.item {
+  padding: 0rem 0rem 0rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.item:hover {
+  transition: 0.3s;
+  background-color: #ece9e9;
+}
+
+.item > .inner p {
+  margin-top: 1px;
+}
+
+.inner p {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.check-button {
+  width: 25px;
+  height: 25px;
+  background: url('../assets/check-outline.png');
+  background-size: cover;
+  margin-left: auto;
+  margin-right: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url('../assets/check-solid.png');
+  background-size: contain;
+}
+
+.trash-button {
+  width: 25px;
+  height: 25px;
+
+  background: url('../assets/trash-outline.png');
+  background-size: contain;
+  margin-left: 16px;
+  margin-right: 1rem;
+
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url('../assets/trash-fill.png');
+  background-size: contain;
+}
+
+.undo-button {
+  width: 25px;
+  height: 25px;
+  background: url('../assets/undo-ouline.png');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+
+  border: none;
+}
+
+.undo-button:hover {
+  background: url('../assets/undo-ouline.png');
+  background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
+/* Output Box ends */
