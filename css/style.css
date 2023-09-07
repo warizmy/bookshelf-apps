@@ -51,6 +51,7 @@ header .navbar-nav #header-txt {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 5rem;
 }
 
 /* Input Box Start */
