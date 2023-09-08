@@ -108,7 +108,15 @@ function makeOutput(booksObject) {
       addTaskToCompleted(booksObject.id);
     });
 
-    container.append(checkButton);
+    const trashButton = document.createElement("button");
+    trashButton.classList.add("trash-button");
+
+    trashButton.addEventListener("click", function () {
+      removeTaskFromCompleted(booksObject.id);
+      showDeleteConfirmation(booksObject.id);
+    });
+
+    container.append(checkButton, trashButton);
   }
 
   return container;
@@ -164,9 +172,7 @@ function undoTaskFromCompleted(booksId) {
 
 // Dialog function after deleting books from shelf
 function showDeleteConfirmation(booksId) {
-  const confirmation = window.confirm(
-    "Are you sure want to delete this?"
-  );
+  const confirmation = window.confirm("Are you sure want to delete this?");
   if (confirmation) {
     removeTaskFromCompleted(booksId);
   }

@@ -210,7 +210,6 @@ header .navbar-nav #header-txt {
   background: url('../assets/check-outline.png');
   background-size: cover;
   margin-left: auto;
-  margin-right: 1rem;
   cursor: pointer;
   border: none;
 }
