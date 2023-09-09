@@ -7,4 +7,4 @@ Featured :
 - Undo Books
 - Delete Books
 
-PS : More featured comming soon
+PS : More feature coming soon
